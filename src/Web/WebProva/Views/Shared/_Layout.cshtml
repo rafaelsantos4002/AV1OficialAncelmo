@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Loja Top da Leste - Os produtos mais baratos de pvh.</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/dashboard.css" />
+    <script src="~/js/validator.min.js"></script>
+    <script src="~/js/validator.js"></script>
+</head>
+<body>
+
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <a class="navbar-brand"></a>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="https://localhost:44376/" class="nav-link px-2 text-white">Inicio</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Sobre-Nós</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Reservado#</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input type="search" class="form-control form-control-dark" placeholder="Procure...">
+                </form>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-warning"><a href="https://localhost:44376/admin/index">Administração</a></button>
+                    <button type="button" class="btn btn-outline-light me-2">Entrar</button>
+                    <button type="button" class="btn btn-warning">Registre-se</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-white bg-dark">
+        <div class="container">
+            &copy; 2021 - Top Leste criado por Rafael Santos.
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

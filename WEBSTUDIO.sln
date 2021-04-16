@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DA584FE3-6FFF-43D2-A5D3-A6800310F7E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dominio", "Dominio", "{9A864595-09AF-4EC7-AD6B-29AC22AE0B18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{2441635D-97D5-4194-B291-5E246290FC9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{CE8B7D20-1BE9-41B2-9C45-B5551C953AC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebProva", "src\Web\WebProva\WebProva.csproj", "{9E93D453-9756-4301-BB3D-9AC645D61016}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E93D453-9756-4301-BB3D-9AC645D61016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E93D453-9756-4301-BB3D-9AC645D61016}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E93D453-9756-4301-BB3D-9AC645D61016}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E93D453-9756-4301-BB3D-9AC645D61016}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9A864595-09AF-4EC7-AD6B-29AC22AE0B18} = {DA584FE3-6FFF-43D2-A5D3-A6800310F7E0}
+		{2441635D-97D5-4194-B291-5E246290FC9A} = {DA584FE3-6FFF-43D2-A5D3-A6800310F7E0}
+		{CE8B7D20-1BE9-41B2-9C45-B5551C953AC8} = {DA584FE3-6FFF-43D2-A5D3-A6800310F7E0}
+		{9E93D453-9756-4301-BB3D-9AC645D61016} = {CE8B7D20-1BE9-41B2-9C45-B5551C953AC8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36BD10CB-4788-41F9-96E1-3BA7F7C9500C}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,108 @@
+﻿
+@{
+    ViewData["Title"] = "Add Produto";
+    string nome_adm = "Rafael Santos";
+}
+
+<div class="b-example-divider"></div>
+
+<div class="container">
+    <header class="d-flex justify-content-center py-3 bg-secondary">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="https://localhost:44376/admin/index" class="nav-link active text-white">Inicio</a></li>
+            <li class="nav-item"><a href="https://localhost:44376/admin/CadastrarCliente" class="nav-link text-white">Cadastrar Clientes</a></li>
+            <li class="nav-item"><a href="https://localhost:44376/admin/CadastrarProduto" class="nav-link text-white">Cadastrar Produtos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white">#</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white">#</a></li>
+        </ul>
+    </header>
+</div>
+
+<main class="container">
+    <div class="bg-light p-5 rounded">
+        <h1>Formulario para cadastrar Produto!</h1>
+        <form data-toggle="validator">
+            <div class="card mgTopRow">
+                <h5 class="card-header"># Produto</h5>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="input-group">
+                            <span class="input-group-text">Descrição</span>
+                            <textarea class="form-control" aria-label="With textarea" required></textarea>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <label for="Quantidade" class="form-label">Codígo do Produto</label>
+                            <input type="text" class="form-control" id="Quantidade" placeholder="Codigo aqui" required/>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <label for="valor" class="form-label">Preço</label>
+                            <input type="number" class="form-control" id="valor" placeholder="R$ 00.00" required/>
+                        </div>
+
+                        <div class="col-md-4 col-xs-4">
+                            <label for="uf" class="form-label">Tipo de Pagamento</label>
+                            <select id="uf" class="form-control">
+                                <option>Selecione</option>
+                                <option>A VISTA</option>
+                                <option>CARTÃO</option>
+                                <option>BOLETO</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <label for="valor" class="form-label">Quantidade</label>
+                            <input type="text" class="form-control" id="valor" placeholder="Quantidade Aqui" />
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <label for="categ" class="form-label">Categoria</label>
+                            <select id="categ" class="form-control" type="text" required>
+                                <option value="">Selecione</option>
+                                <option value="infantil">INFANTIL</option>
+                                <option value="juvenil">JUVENIL</option>
+                                <option value="adulto">ADULTO</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <label for="valor" class="form-label">Observação</label>
+                            <input type="text" class="form-control" id="valor" placeholder="Digite aqui a observação" />
+                        </div>
+                    </div>
+                    
+                </div>
+                <h5 class="card-header"># Pagamento no Cartão</h5>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="row mgTopRow">
+                            <div class="col-md-3 col-xs-4">
+                                <label for="cpf" class="form-label">Nome do Cartão</label>
+                                <input type="text" class="form-control" id="cpf" placeholder="Fulano de M. Soares" />
+                            </div>
+                            <div class="col-md-3 col-xs-4">
+                                <label for="rg" class="form-label">Numero do Cartão</label>
+                                <input type="text" class="form-control" id="rg" placeholder="Número do Cartão" />
+                            </div>
+                            <div class="col-md-3 col-xs-4">
+                                <label for="cep" class="form-label">Data de Vencimento</label>
+                                <input type="text" class="form-control" id="cep" placeholder="MM/ANO" />
+                            </div>
+                            <div class="col-md-3 col-xs-4">
+                                <label for="rua" class="form-label">VCC</label>
+                                <input type="text" class="form-control" id="rua" placeholder="Atrás do Cartão." />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-1">
+                            <a href="index.html" class="btn btn-outline-primary">Voltar</a>
+                        </div>
+                        <div class="col-11 text-end">
+                            <input type="submit" class="btn btn-outline-success" value="Salvar" id="btnGravar" />
+                        </div>
+
+                    </div>
+                </div>
+        </form>
+    </div>
+</main>

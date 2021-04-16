@@ -1,0 +1,112 @@
+﻿
+@{
+    ViewData["Title"] = "Add Cliente";
+    string nome_adm = "Rafael Santos";
+}
+
+
+<div class="b-example-divider"></div>
+
+<div class="container">
+    <header class="d-flex justify-content-center py-3 bg-secondary">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="https://localhost:44376/admin/index" class="nav-link active text-white">Inicio</a></li>
+            <li class="nav-item"><a href="https://localhost:44376/admin/CadastrarCliente" class="nav-link text-white">Cadastrar Clientes</a></li>
+            <li class="nav-item"><a href="https://localhost:44376/admin/CadastrarProduto" class="nav-link text-white">Cadastrar Produtos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white">#</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white">#</a></li>
+        </ul>
+    </header>
+</div>
+
+<main class="container">
+    <div class="bg-light p-5 rounded">
+        <h1>Formulario para cadastrar Cliente!</h1>
+        <form data-toggle="validator">
+            <div class="card mgTopRow">
+                <h5 class="card-header">Cadastrar Cliente</h5>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-4">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input class="form-control" id="nome" placeholder="Seu nome aqui" type="text" required/>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <label for="sobrenome" class="form-label">Sobrenome</label>
+                            <input type="text" class="form-control" id="sobrenome" placeholder="Seu sobrenome aqui" />
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <label for="dataDeNascimento" class="form-label">Data de Nascimento</label>
+                            <input type="date" class="form-control" id="dataDeNascimento" />
+                        </div>
+                    </div>
+                    <div class="row mgTopRow">
+                        <div class="col-md-2 col-xs-4">
+                            <label for="cpf" class="form-label">C.P.F</label>
+                            <input class="form-control" id="cpf" placeholder="000.000.000-00" type="number" data-error="No minimo 11 numeros." data-minlength="11" required />
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="col-md-2 col-xs-4">
+                            <label for="rg" class="form-label">Telefone</label>
+                            <input type="number" class="form-control" id="rg" placeholder="(069)00000-0000" required/>
+                        </div>
+                        <div class="col-md-2 col-xs-4">
+                            <label for="uf" class="form-label">U.F</label>
+                            <select id="uf" class="form-control">
+                                <option>Selecione</option>
+                                <option>AC</option>
+                                <option>AM</option>
+                                <option>AP</option>
+                                <option>CE</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 col-xs-4">
+                            <label class="form-label">Sexo</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sexo" id="sexoMasculino">
+                                <label class="form-check-label" for="sexoMasculino">
+                                    Masculino
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sexo" id="sexoFeminino">
+                                <label class="form-check-label" for="sexoFeminino">
+                                    Feminino
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <label for="dataDeExpedicao" class="form-label">Data de Expedição</label>
+                            <input type="date" class="form-control" id="dataDeExpedicao" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-xs-4">
+                            <label for="cep" class="form-label">CEP</label>
+                            <input type="text" class="form-control" id="cep" placeholder="00.000-000" />
+                        </div>
+                        <div class="col-md-6 col-xs-4">
+                            <label for="rua" class="form-label">Rua/Av</label>
+                            <input type="text" class="form-control" id="rua" placeholder="Nome da rua ou av, número" />
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <label for="cidade" class="form-label">Cidade</label>
+                            <input type="text" class="form-control" id="cidade" placeholder="Nome da cidade" />
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-1">
+                            <a href="index.html" class="btn btn-outline-primary">Voltar</a>
+                        </div>
+                        <div class="col-11 text-end">
+                            <input type="submit" class="btn btn-outline-success" value="Salvar" id="btnGravar" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>
