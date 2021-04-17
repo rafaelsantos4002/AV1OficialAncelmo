@@ -22,7 +22,7 @@
 <main class="container">
     <div class="bg-light p-5 rounded">
         <h1>Formulario para cadastrar Cliente!</h1>
-        <form data-toggle="validator">
+        <form asp-controller="Cliente" asp-action="Novo"  data-toggle="validator">
             <div class="card mgTopRow">
                 <h5 class="card-header">Cadastrar Cliente</h5>
                 <div class="card-body">
@@ -76,7 +76,7 @@
                             </div>
                         </div>
                         <div class="col-md-4 col-xs-4">
-                            <label for="dataDeExpedicao" class="form-label">Data de Expedição</label>
+                            <label for="dataDeExpedicao" class="form-label">Data de cadastro</label>
                             <input type="date" class="form-control" id="dataDeExpedicao" />
                         </div>
                     </div>
